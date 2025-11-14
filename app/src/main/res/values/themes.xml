@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 1. Base application theme. -->
+    <style name="Base.Theme.Phonecalls" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Phonecalls" parent="Base.Theme.Phonecalls" />
+
+
+    <!-- 2. The style for your dialer buttons. -->
+    <style name="DialerButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+
+        <!-- FIX: This line makes the button text visible -->
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+</resources>
